@@ -2,38 +2,24 @@
 
 ![PyTorch](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=for-the-badge&logo=PyTorch&logoColor=white)
 
-| <img src="https://github.com/sportsreid/sportsreid/blob/main/images/hierarchical_8921.jpg" width="450" height=240>  | | | <img src="https://github.com/sportsreid/sportsreid/blob/main/images/hierarchical_3297.jpg" width="450" height=240>  | 
+| <img src="https://github.com/dhagesakshi/sportsreid/blob/main/images/hierarchical_8921.jpg" width="450" height=240>  | | | <img src="https://github.com/dhagesakshi/sportsreid/blob/main/images/hierarchical_3297.jpg" width="450" height=240>  | 
 |:--:|:--:|:--:|:--:| 
 | *True match is shown with blue border* | | | *True match is shown with blue border* |
 
 
-# Sportsreid
-
-Sportsreid is useful for re-identifying the same player in different frames of a broadcast video of a match. This repo is built on top of [SoccerNet Re-Identification](https://github.com/SoccerNet/sn-reid) and the popular [Torchreid](https://github.com/KaiyangZhou/deep-person-reid). It is currently ranked #2 on the test split leaderboard for the SoccerNet 2022 ReIdentification challenge.
-
-A detailed discussion of our approach can be found on [arXiv](https://arxiv.org/abs/2206.02373).
 
 <!---
 ## Hierarchical Sampling
 
-The hierarchical sampler is defined in [torchreid/data/sampler.py](torchreid/data/sampler.py) as [RandomIdentitySampler_Hierarchical](https://github.com/sportsreid/sportsreid/blob/dcd1fccf0d3b2921edfd089d010e9512ff61fe51/torchreid/data/sampler.py#L15). To use it, just set "train_sampler" to "RandomIdentitySampler_Hierarchical" in the yaml config file.
+The hierarchical sampler is defined in [torchreid/data/sampler.py](torchreid/data/sampler.py) as [RandomIdentitySampler_Hierarchical](https://github.com/dhagesakshi/sportsreid/blob/dcd1fccf0d3b2921edfd089d010e9512ff61fe51/torchreid/data/sampler.py#L15). To use it, just set "train_sampler" to "RandomIdentitySampler_Hierarchical" in the yaml config file.
 
 ## Centroid loss
 
-The centroid loss is defined in [torchreid/losses/hard_mine_triplet_loss.py](https://github.com/sportsreid/sportsreid/blob/dcd1fccf0d3b2921edfd089d010e9512ff61fe51/torchreid/losses/hard_mine_triplet_loss.py#L91). To use it, set "weight_cc" to a value > 0.0 in the yaml config file.
+The centroid loss is defined in [torchreid/losses/hard_mine_triplet_loss.py](https://github.com/dhagesakshi/sportsreid/blob/dcd1fccf0d3b2921edfd089d010e9512ff61fe51/torchreid/losses/hard_mine_triplet_loss.py#L91). To use it, set "weight_cc" to a value > 0.0 in the yaml config file.
 
 -->
 
-## Citation
-If you use this repository and/or models in your research, please cite
 
-```
-@misc{https://doi.org/10.48550/arxiv.2206.02373,
-  doi = {10.48550/ARXIV.2206.02373},
-  url = {https://arxiv.org/abs/2206.02373},
-  author = {Comandur, Bharath},
-  title = {Sports Re-ID: Improving Re-Identification Of Players In Broadcast Videos Of Team Sports},
-```
 
 ## Metrics, Pretrained Models and Config Files
 
@@ -54,7 +40,7 @@ The ViT-L/16* model is trained with 5 different random seeds for initialization 
 
 ```
 # cd to your preferred directory and clone this repo
-git clone https://github.com/sportsreid/sportsreid.git
+git clone https://github.com/dhagesakshi/sportsreid.git
 
 # create environment
 cd sportsreid/
@@ -71,13 +57,7 @@ conda install pytorch torchvision cudatoolkit=9.0 -c pytorch
 # install sportsreid (don't need to re-build it if you modify the source code)
 python setup.py develop
 ```
-## Training
 
-```
-python benchmarks/baseline/main.py --config-file <path to config yaml file>
-```
-
-This will automatically download the SoccerNet data as well. If you want to download data separately, please look at the SoccerNet [github page](https://github.com/SoccerNet/sn-reid)
 
 ## Inference
 
