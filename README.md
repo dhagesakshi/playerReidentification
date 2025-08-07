@@ -2,7 +2,8 @@
 
 ![PyTorch](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=for-the-badge&logo=PyTorch&logoColor=white)
 
-| <img src="https://github.com/dhagesakshi/sportsreid/blob/main/images/hierarchical_8921.jpg" width="450" height=240>  | | | <img src="https://github.com/dhagesakshi/sportsreid/blob/main/images/hierarchical_3297.jpg" width="450" height=240>  | 
+| <img src="https://github.com/dhagesakshi/sportsreid/blob/main/images/hierarchical_8921.jpg" width="450" height=240>  | | | <img src="https://github.com/dhagesakshi/sportsreid/blob/main/images/hierarchical_3297.jpg" width="450" height=240>|
+![alt text](images/hierarchical_3297.jpg) 
 |:--:|:--:|:--:|:--:| 
 | *True match is shown with blue border* | | | *True match is shown with blue border* |
 
